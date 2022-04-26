@@ -29,6 +29,7 @@ def calculate_e_value(sensitivity, specificity, PNS, Harvest_value=1000, Wait_Ha
     st.write("P_DS_S =",P_DS_S)
 
 if __name__ == "__main__":
+    user_input = st.text_input("Sensitivity")
     calculate_e_value(sensitivity = 0.76,
                   specificity = 0.69, 
                   PNS = 0.25, 
