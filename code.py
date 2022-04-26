@@ -32,9 +32,9 @@ if __name__ == "__main__":
     sensitivity_ip = st.text_input("Sensitivity")
     specificity_ip = st.text_input("Specificity")
     probability_of_no_storm = st.text_input("Probability of No Storm")
-    calculate_e_value(sensitivity = sensitivity_ip, 
-                  specificity = specificity_ip, 
-                  PNS = probability_of_no_storm, 
+    calculate_e_value(sensitivity = float(sensitivity_ip), 
+                  specificity = float(specificity_ip), 
+                  PNS = float(probability_of_no_storm), 
                   Harvest_value = 1000, 
                   Wait_Harvest_NS = 1500, 
                   Wait_Harvest_S = 500)
